@@ -12,10 +12,22 @@
     <title>Easybank</title>
   </head>
   <body>
-    <header>
-      <a href="#">
-        <img src="./assets/images/logo.svg" alt="" />
-      </a>
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="#" class="header_logo">
+          <img src="./assets/images/logo.svg" alt="" />
+        </a>
+        <a href="#" class="header_menu hide-for-desktop">
+          <span></span><span></span><span></span>
+        </a>
+        <div class="header_links hide-for-mobile">
+          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a
+          ><a href="#">Blog</a><a href="#">Careers</a>
+        </div>
+        <button type="button" class="button hide-for-mobile">
+          Request Invite
+        </button>
+      </nav>
     </header>
   </body>
 </html>
