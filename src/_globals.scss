@@ -1,6 +1,6 @@
 @import './fonts.css';
 @import './_variables.scss';
-@import './mixins.scss';
+@import './_mixins.scss';
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -66,3 +66,5 @@ button,
     display: none;
   }
 }
+
+
