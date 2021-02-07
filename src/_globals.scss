@@ -18,11 +18,17 @@ body {
   font-size: $font-med;
   color: $color_neutral_grayish_blue;
   font-weight: 300;
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+.container {
+  padding: 0 1.5rem;
 }
 .flex {
   display: flex;
@@ -66,5 +72,3 @@ button,
     display: none;
   }
 }
-
-

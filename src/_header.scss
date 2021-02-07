@@ -3,9 +3,9 @@
   .overlay {
     visibility: hidden;
     opacity: 0;
-    position: fixed;
+    position: absolute;
     left: 0;
-    top: 60px;
+    top: 0;
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient($color_primary_dark_blue, transparent);
@@ -17,7 +17,7 @@
     }
   }
   &.open {
-    .header_menu {
+    .header_toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -28,10 +28,18 @@
         transform: rotate(-45deg);
       }
     }
+    .header_menu {
+      padding: 1.625rem;
+      margin-top: 1.5rem;
+      height: 267px;
+    }
   }
 
   nav {
-    padding: 1.0625rem 1.5rem;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+    position: relative;
+    background-color: #fff;
   }
   &_logo {
     img {
@@ -39,7 +47,7 @@
       height: 1.375rem;
     }
   }
-  &_menu {
+  &_toggle {
     > span {
       display: block;
       width: 26px;
@@ -49,6 +57,30 @@
       transform-origin: 3px 1px;
       &:not(:last-child) {
         margin-bottom: 5px;
+      }
+    }
+  }
+  &_menu {
+    background-color: #fff;
+    padding: 1.625rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s linear;
+    a {
+      color: $color_primary_dark_blue;
+      padding: 0.625rem;
+      display: block;
+      text-align: center;
+      &:hover {
+        color: $color_neutral_grayish_blue;
       }
     }
   }
