@@ -21,6 +21,14 @@ body {
   &.noscroll {
     overflow: hidden;
   }
+  @include breakpoints-up(large) {
+    font-size: 1.25rem;
+  }
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
 }
 a,
 a:visited,
@@ -29,6 +37,8 @@ a:hover {
 }
 .container {
   padding: 0 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
 }
 .flex {
   display: flex;
@@ -56,7 +66,9 @@ button,
   border: none;
   color: white;
   font-weight: 700;
+  font-size: $font-sm;
   transition: opacity 0.2s linear;
+  outline: none;
   &:hover {
     opacity: 0.75;
   }
