@@ -49,19 +49,5 @@
       flex: 2;
       text-align: left;
     }
-    h1 {
-      font-weight: 300;
-      font-size: 2.31rem;
-      line-height: 1.15;
-      color: $color_primary_dark_blue;
-      margin-bottom: 1.5rem;
-      @include breakpoints-up(large) {
-        font-size: 3.5rem;
-      }
-    }
-    p {
-      line-height: 1.5;
-      margin-bottom: 2.25rem;
-    }
   }
 }

@@ -1,0 +1,59 @@
+@import './_mixins.scss';
+@import './variables.scss';
+
+.feature {
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+  background-color: $color_neutral_light_gray;
+  text-align: center;
+  @include breakpoints-up(medium) {
+    text-align: left;
+    padding-top: 5.625rem;
+    padding-bottom: 5.625rem;
+  }
+  &_intro {
+    margin-bottom: 3.75rem;
+    @include breakpoints-up(large) {
+      width: 60%;
+    }
+  }
+  &_grid {
+    @include breakpoints-up(medium) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &_item {
+    padding: 0.9375rem;
+    @include breakpoints-up(medium) {
+      flex: 0 0 50%;
+    }
+    @include breakpoints-up(large) {
+      flex: 1;
+    }
+  }
+  &_icon {
+    margin-bottom: 1.875rem;
+    @include breakpoints-up(large) {
+      margin-bottom: 2.75rem;
+    }
+  }
+  &_title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $color_primary_dark_blue;
+    margin-bottom: 1.5rem;
+    @include breakpoints-up(large) {
+      font-size: 1.5rem;
+      margin-bottom: 2.125rem;
+    }
+  }
+  &_description {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color_neutral_grayish_blue;
+    margin-bottom: 1.5rem;
+  }
+}
