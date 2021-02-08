@@ -2,9 +2,11 @@
   @include breakpoints-up(large) {
     display: flex;
     align-items: center;
+    background-color: $color_neutral_bright_cyan;
   }
   &_image {
     position: relative;
+    z-index: -1;
     background-image: url('./assets/images/bg-intro-mobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
