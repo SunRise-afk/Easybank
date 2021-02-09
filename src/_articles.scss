@@ -7,8 +7,6 @@
   background-color: $color_neutral_bright_cyan;
 }
 .article {
-  &_content {
-  }
   &_grid {
     width: 100%;
     display: flex;
@@ -21,10 +19,11 @@
     border-radius: 0.3125rem;
     background-color: #fff;
     overflow: hidden;
-    transition: box-shadow 0.1s linear;
+    transition: all 0.1s linear;
     margin-bottom: 1.5625rem;
     &:hover {
       box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.15);
+      transform: scale(1.05);
     }
     @include breakpoints-up(medium) {
       width: 48%;

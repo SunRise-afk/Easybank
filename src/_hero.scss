@@ -23,8 +23,8 @@
       background-image: url('./assets/images/bg-intro-desktop.svg');
       background-position: left center;
       max-width: 50rem;
+      z-index: 1;
     }
-
     &::before {
       content: '';
       display: block;
