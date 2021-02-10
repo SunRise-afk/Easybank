@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "easybank layout",
   "main": "index.js",
+  "homepage": "https://sunrise-afk.github.io/Easybank",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d dist",
@@ -29,5 +30,8 @@
     "webpack": "^5.21.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
